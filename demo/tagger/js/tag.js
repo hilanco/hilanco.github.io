@@ -27,6 +27,8 @@ function tagging(){
 	var szoveg = $('#cikk-szoveg').val().trim();
 	if (szoveg == "") {
 		alert('Töltse ki a szöveg mezőt!');
+		$(".se-pre-con").fadeOut("slow");
+		return;
 	}
 	
 	var objectToSend = new Object();

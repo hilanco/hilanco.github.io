@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>HVG címkéző</title>
+  <title>Document classifier - tagger</title>
 
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -29,20 +29,32 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-		  <a href="https://hilanco.github.io/">
-			 <img class="hilanco" alt="hilanco" src="img/hilanco.png">
-		  </a>
+		<div class="row">
+			<a class="title-a" href="https://hilanco.github.io/">
+				<div class="title-box">
+				  <h1 class="main-title">
+					HILANCO
+				  </h1>
+				  <p class="sub-title">
+					Hungarian Intelligent Language Applications Consortium
+				  </p>    
+				</div>
+			</a>
+			<a href="https://hilanco.github.io/">
+				<img class="hilanco float-xl-right float-lg-left" alt="hilanco" src="img/hilanco.png">
+			</a>
+		  </div>
           <!-- Page Heading -->
 		  <br />
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dokumentumosztályozás - címkézés</h1>
+            <h1 class="h3 mb-0 text-gray-800">Document classifier - tagger</h1>
           </div>
 		  
 		  <div class="row">
 
 				<div class="col-sm-12 col-lg-6">
 					<div class="form-group">
-						<label for="probRange">Valószínűség: <b><span id="probValue">0.8</span></b></label>
+						<label for="probRange">Probability: <b><span id="probValue">0.8</span></b></label>
 						<div class="custom-control custom-checkbox">
 							<input type="checkbox" class="custom-control-input" id="top3" checked>
 							<label class="custom-control-label" for="top3">min. 3</label>
@@ -61,52 +73,52 @@
               <div class="card shadow mb-4">
                 <!-- Card Header -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 id="cikk-body" class="m-0 font-weight-bold text-primary">Cikk</h6>
+                  <h6 id="cikk-body" class="m-0 font-weight-bold text-success">Article</h6>
 				  <a onclick="torol()" class="btn btn-secondary left">
                     <span class="icon text-white-50">
                       <i class="fas fa-trash-alt"></i>
                     </span>
                   </a>
-				  <a onclick="tagging()" id="button-tag" class="btn btn-secondary btn-icon-split disabled">
+				  <a onclick="tagging()" id="button-tag" class="btn btn-success btn-icon-split disabled">
                     <span class="icon text-white-50">
                       <i class="fas fa-tag"></i>
                     </span>
-                    <span class="text">Címkézés</span>
+                    <span class="text">Tagging</span>
                   </a>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">		 
 					<div class="form-group">
-						<label for="cikk-szoveg">Cikk szövege</label>
-						<textarea class="form-control" rows="10" id="cikk-szoveg" required="required" placeholder="Cikk szövege ..."></textarea>
+						<label for="cikk-szoveg">Article text</label>
+						<textarea class="form-control" rows="10" id="cikk-szoveg" required="required" placeholder="News article text ..."></textarea>
 					</div>
                 </div>
 				<div class="card-footer">
-					<a onclick="test()" class="btn-sm btn-warning btn-icon-split">
+					<a onclick="test()" class="btn-sample btn-sm btn-success btn-icon-split">
 						<span class="icon text-white-50">
 						  <i class="fas fa-tag"></i>
 						</span>
 						<span class="text">Sport (Origo)</span>
 					</a>
-					<a onclick="test2()" class="btn-sm btn-warning btn-icon-split">
+					<a onclick="test2()" class="btn-sample btn-sm btn-success btn-icon-split">
 						<span class="icon text-white-50">
 						  <i class="fas fa-tag"></i>
 						</span>
 						<span class="text">Bitcoin (Index)</span>
 					</a>
-					<a onclick="test3()" class="btn-sm btn-warning btn-icon-split">
+					<a onclick="test3()" class="btn-sample btn-sm btn-success btn-icon-split">
 						<span class="icon text-white-50">
 						  <i class="fas fa-tag"></i>
 						</span>
 						<span class="text">Putyin (Telex)</span>
 					</a>
-					<a onclick="test4()" class="btn-sm btn-warning btn-icon-split">
+					<a onclick="test4()" class="btn-sample btn-sm btn-success btn-icon-split">
 						<span class="icon text-white-50">
 						  <i class="fas fa-tag"></i>
 						</span>
 						<span class="text">Koronavírus (HVG)</span>
 					</a>
-					<a onclick="test5()" class="btn-sm btn-warning btn-icon-split">
+					<a onclick="test5()" class="btn-sample btn-sm btn-success btn-icon-split">
 						<span class="icon text-white-50">
 						  <i class="fas fa-tag"></i>
 						</span>
@@ -126,9 +138,9 @@
 				<!-- Card Body -->
                 <div class="card-body" id="cimke-card-body">
                   <table class="table" id="cimke-tablazat">
-					  <thead class="text-primary card-header">
+					  <thead class="text-success card-header">
 						<tr>
-						  <th scope="col">Ajánlott címkék</th>
+						  <th scope="col">Recommended tags / classes</th>
 						</tr>
 					  </thead>
 					  <tbody>
