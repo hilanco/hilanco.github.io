@@ -70,3 +70,16 @@
 	max-height: 300px;
 	overflow-y: auto;
 }
+
+
+img.hilanco {
+	min-width: 500px;
+	min-height: 70px;
+	width: 30%;
+	height: 30%;
+	margin-bottom: 10px;
+}
+
+.container-fluid > div {
+	padding-left: 10px;
+}
