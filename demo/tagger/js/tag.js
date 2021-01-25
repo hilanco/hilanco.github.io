@@ -57,7 +57,7 @@ function tagging(){
 
 function loadTags(result) {
 	tags = result['tags'];
-    //alert(JSON.stringify(tags));
+    alert(JSON.stringify(tags));
 	updateTags();
 }
 
