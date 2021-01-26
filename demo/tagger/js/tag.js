@@ -67,14 +67,15 @@ function updateTags() {
 	for (i in tags){
 		var tag = tags[i][0];
 		var num = parseFloat(tags[i][1]).toFixed(4);
-
-		if(num >= aktProb) {
-			predikalt.append(
-				'<li>' +
-				tag.replace("__label__", "").replace(re," ") +
-				' (' + num + ')' +
-				'</li>'
-			);
+		if (!(tag.includes("ner__") || tag.includes("geography__") || tag.includes("geo__") || tag.includes("person__") || tag.includes("pers__") || tag.includes("organization__") || tag.includes("org__"))) {
+			if(num >= aktProb) {
+				predikalt.append(
+					'<li>' +
+					tag.replace("__label__", "").replace(re," ") +
+					' (' + num + ')' +
+					'</li>'
+				);
+			}
 		}
 	}
 	var predictTagsAdded = 0;	
@@ -83,14 +84,16 @@ function updateTags() {
 		for (i in tags) {
 			var tag = tags[i][0];
 			var num = parseFloat(tags[i][1]).toFixed(4);
-			if(predictTagsAdded < 3) {
-				predikalt.append(
-					'<li>' +
-					tag.replace("__label__", "").replace(re," ") +
-					' (' + num + ')' +
-					'</li>'
-				);
-				predictTagsAdded++;
+			if (!(tag.includes("ner__") || tag.includes("geography__") || tag.includes("geo__") || tag.includes("person__") || tag.includes("pers__") || tag.includes("organization__") || tag.includes("org__"))) {
+				if(predictTagsAdded < 3) {
+					predikalt.append(
+						'<li>' +
+						tag.replace("__label__", "").replace(re," ") +
+						' (' + num + ')' +
+						'</li>'
+					);
+					predictTagsAdded++;
+				}		
 			}			
 		}
 	}
