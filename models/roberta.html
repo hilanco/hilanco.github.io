@@ -6,11 +6,14 @@
         <title>HILANCO</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
         <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+		 <style>
+		  .b-border {font-weight: bold;}
+		 </style> 
     </head>
     <body>
         <section class="section">
             <div class="container">
-              <a href="https://hilanco.github.io/">
+			  <a href="https://hilanco.github.io/">
               <div class="columns">
                 <div class="column is-8">				
                   <h1 class="title">
@@ -27,24 +30,113 @@
                 </div>
                 </div>
 				</a>
-				<br />
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
                 <div class="content">
 					<h4 class="title is-4">
-						RoBERTa
+						HIL-RoBERTa
 					</h4>
                   <p class="has-text-justified">
-                    RoBERTa
+                    HIL-RoBERTa
                   </p>
+				</div>
+				<div class="content">
+				  <h4 class="title is-4">Results</h4>
+				  <table class="table">
+					<thead>
+						<tr>
+							<th>Model</th>
+							<th>NER F1</th>
+							<th>NP F1</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>HILBERT</td>
+							<td>93.91%</td>
+							<td>95.80%</td>
+							<td>BERT large, trained on NYTI v1 corpus.</td>
+						</tr>
+						<tr>
+							<td>HIL-ELECTRA NYTI v1</td>
+							<td>91.95%</td>
+							<td>94.20%</td>
+							<td>ELECTRA small, trained on NYTI v1 corpus.</td>
+						</tr>
+						<tr>
+							<td>HIL-ELECTRA wiki</td>
+							<td>91.32%</td>
+							<td>94.14%</td>
+							<td>ELECTRA small, trained on Hungarian Wikipedia.</td>
+						</tr>
+						<tr class="b-border">
+							<td>HIL-RoBERTa wiki</td>
+							<td>90.98%</td>
+							<td>89.48%</td>
+							<td>RoBERTa base, trained on Hungarian Wikipedia.</td>
+						</tr>
+						<tr>
+							<td>HIL-ALBERT NYTI v1 (10%)</td>
+							<td>89.31%</td>
+							<td></td>
+							<td>ALBERT base, trained on 10% of NYTI v1 corpus.</td>
+						</tr>
+						<tr>
+							<td>HIL-ALBERT wiki</td>
+							<td>89.30%</td>
+							<td>89.07%</td>
+							<td>ALBERT base, trained on Hungarian Wikipedia.</td>
+						</tr>
+						<tr>
+							<td>huBERT</td>
+							<td>97.62%</td>
+							<td>96.97%</td>
+							<td>State-of-the-art BERT model for Hungarian, trained on Webcorpus 2.0 and Hungarian Wikipedia. <br />Created by BME. <a href="https://hlt.bme.hu/en/resources/hubert" target="_blank">More details &raquo;</a></td>
+						</tr>
+					</tbody>
+				  </table>
+				  </div>
                 </div>
             </div>
-          </section>
+          </section>		  
+            <section class="section">
+				<!--
+                <div class="container">
+                    <h4 class="title is-4">
+                        Publications
+                    </h4>
+                    <div class="content">
+                        <ul>
+                            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                            <li><a href="https://towardsdatascience.com/train-bert-large-in-your-own-language-7685ee26b05b">Train BERT-Large in your own language</a></li>
+                        </ul>
+                    </div>
+                </div> 
+				-->
+				<div class="container">
+                    <h4 class="title is-4">
+                        References
+                    </h4>
+                    <div class="content">
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/1907.11692" target="_blank">RoBERTa: A Robustly Optimized BERT Pretraining Approach</a></li>
+							<li><a href="https://github.com/pytorch/fairseq/tree/master/examples/roberta" target="_blank">Github: RoBERTa</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </section>
+		  <hr />		  
           <section class="section">
             <div class="container">
                 <h4 class="title is-4">
                     More Language Models
                 </h4>
                 
-				<hr />
 				<div class="columns is-multiline">
                     
                         <div class="column is-one-quarter">
@@ -90,9 +182,9 @@
                               <div class="media-content">
                                 <div class="content">
                                   <p>
-                                    <strong>HIL-RoBERTa small</strong>
+                                    <strong>HIL-RoBERTa</strong>
                                     <br>
-                                    HIL-RoBERTa small
+                                    HIL-RoBERTa
                                   </p>
                                 </div>
                               </div>
@@ -119,22 +211,6 @@
                     </div>
                 </div>
 			</section>
-
-            <section class="section">
-                <div class="container">
-                    <h4 class="title is-4">
-                        Publications
-                    </h4>
-                    <div class="content">
-                        <ul>
-                            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-                            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-                            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-                            <li><a href="https://towardsdatascience.com/train-bert-large-in-your-own-language-7685ee26b05b">Train BERT-Large in your own language</a></li>
-                        </ul>
-                    </div>
-                </div> 
-            </section>
 
             <section class="section">
                 <div class="container">
