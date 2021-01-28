@@ -6,6 +6,10 @@
         <title>HILANCO</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
         <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+		<style>
+			.section { padding-top: 20px !important; padding-bottom: 0px}
+			.email {}	
+		</style>
     </head>
     <body>
         <section class="section">
@@ -26,42 +30,50 @@
                 </div>
                 </div>
                 <div class="content">
+				<hr />
                   <p class="has-text-justified">
-                    HILANCO is a Natural Language Processing Consortium in Hungary, between Eötvös Loránd Research Network, Research Institute for Linguistics and University of Pécs, Applied Data Science and Artifical Intelligence Centre. Main goal of the Consortium is to research and populate Artifical Intelligence, especially Natural Language Processing technologies. The work of the Consortium exists on Hungarian and International levels, however there's a clear focus on Hungarian language processing and intelligent language applications.
+                    HILANCO is a Natural Language Processing Consortium (NLP) in Hungary, between the <strong><a href="http://www.nytud.hu/" target="_blank">Research Institute for Linguistics (NYTI)</a></strong> and the <strong><a href="http://www.pte.hu/" target="_blank">University of Pécs, Applied Data Science and Artifical Intelligence Centre (PTE)</a></strong>. The mission of the Consortium is to provide new NLP technologies and resources in order to build intelligent language applications for AI purposes. We provide cutting edge solutions to serve the whole spectrum of innovation from research and development to marketable business products. <br />
+					<strong>For enquiries contact <span class="email">info[at]hilanco.org</span></strong>
                   </p>
                 </div>
             </div>
           </section>
             
           <section class="section">
-            <!--
-            <div class="container">  
-              
-            
+		  
+            <div class="container">
+			<hr/>
+			<div class="columns">
+				<div class="column is-one-third">
+					<h4 class="title is-4">
+						BERT-Large Language Model
+					</h4>
+					<div class="columns">
+						<div class="column">
+							<a href="https://hilanco.github.io/models/hilbert.html">
+							<div class="box">
+								<article class="media">
+								  <div class="media-content">
+									<div class="content">
+									  <p class="has-text-justified">
+										<strong>HILBERT</strong>
+										<br>
+										HILBERT is the BERT-Large model for Hungarian Trained on the 4 BN NYTI-BERT corpus. One of the pioneers of the revolutionary transformer models, BERT has caused a sweeping success in the field of neural NLP.
+									  </p>
+									</div>
+								  </div>
+								</article>
+							</div>
+							</a>    
+						</div>
+					</div>
+				</div>
+			<div class="column">
 				<h4 class="title is-4">
-					Language Models
+					Experimental language models
 				</h4>
 				<div class="columns is-multiline">
-						
-                        <div class="column is-one-quarter">
-                            <a href="https://hilanco.github.io/models/hilbert.html">
-                            <div class="box">
-                                <article class="media">
-                                  <div class="media-content">
-                                    <div class="content">
-                                      <p>
-                                        <strong>HILBERT</strong>
-                                        <br>
-                                        HILBERT 
-                                      </p>
-                                    </div>
-                                  </div>
-                                </article>
-                            </div>
-                            </a>    
-                        </div>                   
-                  
-                    <div class="column is-one-quarter">
+                    <div class="column is-one-third">
                         <a href="https://hilanco.github.io/models/electra.html">
                         <div class="box">
                             <article class="media">
@@ -69,8 +81,12 @@
                                 <div class="content">
                                   <p>
                                     <strong>HIL-ELECTRA</strong>
-                                    <br>
-                                    HIL-ELECTRA
+                                    
+                                    <br />
+									&raquo; HIL-ELECTRA NYTI <br />- trained on NYTI-BERT corpus
+									
+									<br />
+								    &raquo; HIL-ELECTRA wiki <br />- trained on Hungarian Wikipedia									
                                   </p>
                                 </div>
                               </div>
@@ -78,33 +94,18 @@
                         </div>
                         </a>
                     </div>
-                    <div class="column is-one-quarter">
-                    <a href="https://hilanco.github.io/models/roberta.html">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-content">
-                                <div class="content">
-                                  <p>
-                                    <strong>HIL-RoBERTa</strong>
-                                    <br>
-                                    HIL-RoBERTa
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="column is-one-quarter">
+                    <div class="column is-one-third">
                         <a href="https://hilanco.github.io/models/albert.html">
                         <div class="box">
                             <article class="media">
                               <div class="media-content">
                                 <div class="content">
                                   <p>
-                                    <strong>HIL-ALBERT</strong>
-                                    <br>
-                                    HIL-ALBERT
+                                    <strong>HIL-ALBERT</strong>                                    
+                                    <br />
+									&raquo; HIL-ALBERT NYTI <br />- trained on 10% of NYTI-BERT corpus									
+									<br />
+								    &raquo; HIL-ALBERT wiki <br />- trained on Hungarian Wikipedia
                                   </p>
                                 </div>
                               </div>
@@ -112,10 +113,33 @@
                         </div>
                         </a>
                     </div>
+					<div class="column is-one-third">
+						<a href="https://hilanco.github.io/models/roberta.html">
+							<div class="box">
+								<article class="media">
+								  <div class="media-content">
+									<div class="content">
+									  <p>
+										<strong>HIL-RoBERTa</strong>
+										<br>
+										&raquo; HIL-RoBERTa wiki<br />- trained on Hungarian Wikipedia
+									  </p>
+									</div>
+								  </div>
+								</article>
+							</div>
+						</a>
+                    </div>
                 </div>
-              -->
-				<hr />
+				</div>
+			</div>
+			<p>The development of the HILBERT modell was supported by Microsoft Hungary. </p>
+			</div>
+		  </section>			
+
+			<section class="section">
 				<div class="container">
+					<hr />
 					<h4 class="title is-4">
 						Demos
 					</h4>
@@ -210,23 +234,6 @@
                         </a>
                     </div>
                     <div class="column is-one-quarter">
-                        <a href="http://20.71.69.198/">
-                        <div class="box">
-                            <article class="media">
-                              <div class="media-content">
-                                <div class="content">
-                                  <p>
-                                    <strong>Named Entity Recognition API</strong>
-                                    <br>
-                                    Hungarian Named Entity Recognition API, based on szegedNER corpus and Hungarian BERT-large model (HilBERT).
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="column is-one-quarter">
                       <a href="https://hilanco.github.io/demo/abstractive">
                         <div class="box">
                             <article class="media">
@@ -235,7 +242,7 @@
                                   <p>
                                     <strong>Abstractive summarizer</strong>
                                     <br>
-                                    Hungarian abstractive summarizer demo from NYTI. Based on various transformer technologies.
+                                    Hungarian abstractive summarizer demo from NYTI. Based on several BERT varieties.
                                   </p>
                                 </div>
                               </div>
@@ -252,7 +259,7 @@
                                   <p>
                                     <strong>Document classifier / tagger </strong>
                                     <br>
-                                    Hungarian news article classification or tag recommendation tool. 
+                                    Hungarian news article classification or tag recommendation tool. Based on fastText.
                                   </p>
                                 </div>
                               </div>
@@ -261,6 +268,7 @@
 					  </a>
                     </div>
                 </div>
+				<p>The development of the NER and Anonymization demos was supported by Microsoft Hungary.</p>
 				</div>
 			</section>
 
@@ -271,13 +279,26 @@
                     </h4>
                     <div class="content">
                         <ul>
-                            <li><a href="https://rgai.inf.u-szeged.hu/mszny/mszny2021">HILBERT, magyar nyelvű BERT-large modell tanítása felhő környezetben</a></li>
                             <li><a href="https://towardsdatascience.com/train-bert-large-in-your-own-language-7685ee26b05b">Train BERT-Large in your own language</a></li>
+                            <li><a href="https://rgai.inf.u-szeged.hu/sites/rgai.inf.u-szeged.hu/files/mszny2021.pdf">HILBERT, magyar nyelvű BERT-large modell tanítása felhő környezetben</a></li>
                         </ul>
                     </div>
                 </div> 
             </section>
-
+			<section class="section">
+                <div class="container">
+                    <h4 class="title is-4">
+                        Partners
+                    </h4>
+                    <div class="columns">
+						<div class="column is-one-quarter">
+							<figure class="image ">
+							<a href="https://www.microsoft.com/" target="_blank"><img class="" src="pictures/microsoft.png" alt="microsoft"></a>
+						</div>
+					</div>
+				</div>
+            </section>
+			
             <section class="section">
                 <div class="container">
                     <h4 class="title is-4">
@@ -289,7 +310,7 @@
                                 <article class="media">
                                   <div class="media-left">
                                     <figure class="image is-64x64">
-                                      <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                                      <img class="is-rounded" src="pictures/tamas.jpg" alt="Image">
                                     </figure>
                                   </div>
                                   <div class="media-content">
@@ -297,7 +318,7 @@
                                       <p>
                                         <strong>Tamás Váradi</strong>
                                         <br>
-                                        Desputy Director - NYTI
+                                        Deputy Director - NYTI
                                       </p>
                                     </div>
                                     <nav class="level is-mobile">
@@ -324,7 +345,7 @@
                                 <article class="media">
                                   <div class="media-left">
                                     <figure class="image is-64x64">
-                                      <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                                      <img class="is-rounded" src="pictures/adam.jpg" alt="Image">
                                     </figure>
                                   </div>
                                   <div class="media-content">
@@ -423,6 +444,78 @@
                                 </article>
                               </div>
                           </div>
+                    </div>
+					<div class="columns is-multiline">
+                        <div class="column is-one-quarter">
+                            <div class="box">
+                                <article class="media">
+                                  <div class="media-left">
+                                    <figure class="image is-64x64">
+                                      <img class="is-rounded" src="pictures/bence.jpg" alt="Image">
+                                    </figure>
+                                  </div>
+                                  <div class="media-content">
+                                    <div class="content">
+                                      <p>
+                                        <strong>Bence Nyéki</strong>
+                                        <br>
+                                        Computational Linguist - NYTI
+                                      </p>
+                                    </div>
+                                    <nav class="level is-mobile">
+                                      <div class="level-left">
+                                        <a class="level-item" href="https://www.linkedin.com/in/bence-ny%C3%A9ki-a36106169/" aria-label="reply">
+                                          <span class="icon is-small">
+                                            <i class="fab fa-linkedin-in"></i>
+                                          </span>
+                                        </a>
+                                        <a class="level-item" href="mailto:nyeki.bence@nytud.hu" aria-label="reply">
+                                          <span class="icon is-small">
+                                            <i class="fas fa-envelope"></i>
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </nav>
+                                  </div>
+                                </article>
+                              </div>
+                          </div>
+						  <!--
+                          <div class="column is-one-quarter">
+                            <div class="box">
+                                <article class="media">
+                                  <div class="media-left">
+                                    <figure class="image is-64x64">
+                                      <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                                    </figure>
+                                  </div>
+                                  <div class="media-content">
+                                    <div class="content">
+                                      <p>
+                                        <strong>László Boa</strong>
+                                        <br>
+                                        
+                                      </p>
+                                    </div>
+                                    <nav class="level is-mobile">
+                                      <div class="level-left">
+                                        <a class="level-item" href="" aria-label="reply">
+                                          <span class="icon is-small">
+                                            <i class="fab fa-linkedin-in"></i>
+                                          </span>
+                                        </a>
+                                        <a class="level-item" href="" aria-label="reply">
+                                          <span class="icon is-small">
+                                            <i class="fas fa-envelope"></i>
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </nav>
+                                  </div>
+                                </article>
+                              </div>
+                          </div>
+						  -->
                     </div>
                 </div>
             </div>
