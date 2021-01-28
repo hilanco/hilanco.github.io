@@ -79,13 +79,13 @@ function updateTags() {
 		}
 	}
 	var predictTagsAdded = 0;	
-	if ( top3Checked && $('#cimke-predikalt li').length < 3 ) {
+	if ( top3Checked && $('#cimke-predikalt li').length < 5 ) {
 		predikalt.empty();
 		for (i in tags) {
 			var tag = tags[i][0];
 			var num = parseFloat(tags[i][1]).toFixed(4);
 			if (!(tag.includes("ner__") || tag.includes("geography__") || tag.includes("geo__") || tag.includes("person__") || tag.includes("pers__") || tag.includes("organization__") || tag.includes("org__"))) {
-				if(predictTagsAdded < 3) {
+				if(predictTagsAdded < 5) {
 					predikalt.append(
 						'<li>' +
 						tag.replace("__label__", "").replace(re," ") +
