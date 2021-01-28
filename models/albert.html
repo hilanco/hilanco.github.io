@@ -36,7 +36,10 @@
 						HIL-ALBERT
 					</h4>
                   <p class="has-text-justified">
-                    ALBERT is a language model aimed at improving training speed and decreasing memory consumption of the BERT model by applying parameter-reduction techniques. It was introduced in the original paper by Zhenzhong et al. We present two pre-trained uncased ALBERT models:  one of them was trained on Hungarian Wikipedia, which is a part of the Webcorpus 2.0 dataset, while the other one was trained on a sample from the RIL corpus containing approximately 10% of the whole dataset. We used Google’s SentencePiece for tokenization with a vocabulary size of 30000 tokens. The models were trained using Masked Language Modeling but without Next Sentence Prediction. Our code was based on the Hugging Face library. The training was performed on 4 GTX 1080Ti GPU cards with the batch size set to 32. We used a single epoch for training the first model on the sample from the RIL corpus and 2 epochs for training the other model on the Wikipedia corpus. In the first case, the run took approximately 85 hours and about 54 hours in the second case.
+                    ALBERT is a language model aimed at improving training speed and decreasing memory consumption of the BERT model by applying parameter-reduction techniques. It was introduced in the original paper by Zhenzhong et al. We present two pre-trained uncased ALBERT models:  one of them was trained on Hungarian Wikipedia, which is a part of the Webcorpus 2.0 dataset, while the other one was trained on a sample from the NYTI-BERT corpus containing approximately 10% of the whole dataset. We used Google’s SentencePiece for tokenization with a vocabulary size of 30000 tokens. The models were trained using Masked Language Modeling but without Next Sentence Prediction. Our code was based on the Hugging Face library. The training was performed on 4 GTX 1080Ti GPU cards with the batch size set to 32. We used a single epoch for training the first model on the sample from the NYTI-BERT corpus and 2 epochs for training the other model on the Wikipedia corpus. In the first case, the run took approximately 85 hours and about 54 hours in the second case.
+					<br />
+					<br />
+					<strong>To DOWNLOAD the models, please fill out the registration form: <a href="https://forms.gle/Cmr7QKToyBBFNKAi8" target="_blank">&raquo; REGISTRATION FORM &laquo;</a></strong>
                   </p>
 				</div>
 
@@ -73,7 +76,7 @@
                                       <p>
                                         <strong>HILBERT</strong>
                                         <br />
-                                        HILBERT trained on NYTI corpus 
+                                        HILBERT is the BERT-Large model for Hungarian Trained on the 4 BN NYTI-BERT corpus. One of the pioneers of the revolutionary transformer models, BERT has caused a sweeping success in the field of neural NLP.
                                       </p>
                                     </div>
                                   </div>
@@ -92,7 +95,7 @@
                                   <p>
                                     <strong>HIL-ELECTRA</strong>
                                     <br />
-									&raquo; HIL-ELECTRA NYTI <br />- trained on NYTI corpus
+									&raquo; HIL-ELECTRA NYTI <br />- trained on NYTI-BERT corpus
 									
 									<br />
 								    &raquo; HIL-ELECTRA wiki <br />- trained on Hungarian Wikipedia
