@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HILANCO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
+        <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+		<style>
+			.section { padding-top: 20px !important; padding-bottom: 0px}
+		</style>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+			<a href="https://hilanco.github.io/">
+              <div class="columns">
+                <div class="column is-8">				
+                  <h1 class="title">
+                    HILANCO
+                  </h1>
+                  <p class="subtitle">
+                    Hungarian Intelligent Language Applications Consortium
+                  </p>    
+                </div>
+                <div class="column is-4">
+                  <figure class="image is-2-by-1">
+                    <img src="../pictures/hilanco.png">
+                  </figure>
+                </div>
+                </div>
+				</a>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+			  <a class="button" href="https://hilanco.github.io">&laquo; Back to Home Page</a><br /><br />
+                <div class="content">
+					<h4 class="title is-4">
+						Sentence-BERT
+					</h4>
+                  <p class="has-text-justified">
+                    Sentence-BERT (SBERT) models are fine-tuned BERT networks aimed at obtaining high-quality sentence embeddings. SBERT was introduced in the original paper by Reimers and Gurevych (2019).  We used multilingual knowledge distillation proposed by  Reimers and Gurevych (2020) for creating a Hungarian model. The pre-trained hubert-base-cc (Nemeskey 2021) was fine-tuned on the Hunglish 2.0 parallel corpus (Varga et al. 2005) to  mimic the bert-base-nli-stsb-mean-tokens model provided by UKPLab. Sentence embeddings were obtained by applying mean pooling to the huBERT output. The data was split into training (98%) and validation (2%) sets. By the end of the training, a mean squared error of 0.106 was computed on the validation set. Our code was based on the Sentence-Transformers library. Our model was trained for 2 epochs on a single GTX 1080Ti GPU card with the batch size set to 32. The training took approximately 15 hours.
+					<br />
+					<br />
+					<!--<strong>To DOWNLOAD the models, please fill out the registration form: <a href="https://forms.gle/Cmr7QKToyBBFNKAi8" target="_blank">&raquo; REGISTRATION FORM &laquo;</a></strong>-->
+                  </p>
+				</div>
+
+            </div>
+          </section>		  
+            <section class="section">
+				<div class="container">
+                    <h4 class="title is-4">
+                        References
+                    </h4>
+                    <div class="content">
+                        <ul>
+                            <li><a href="https://hlt.bme.hu/media/pdf/huBERT.pdf" target="_blank">Introducing huBERT</a></li>
+							<li><a href="https://arxiv.org/abs/1908.10084" target="_blank">Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks</a></li>
+							<li><a href="https://arxiv.org/abs/2004.09813" target="_blank">Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation</a></li>
+							<li><a href="https://eprints.sztaki.hu/7910/1/Kornai_2400958_ny.pdf" target="_blank">Parallel corpora for medium density languages</a></li>
+							<li><a href="https://github.com/UKPLab/sentence-transformers" target="_blank">Github: sentence-transformers</a></li>
+							<li><a href="http://mokk.bme.hu/resources/hunglishcorpus" target="_blank">Hunglish Corpus Version 2.0</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </section>
+		  <hr />		  
+          <section class="section">
+            <div class="container">
+                <h4 class="title is-4">
+                    More Language Models
+                </h4>
+                
+				<div class="columns is-multiline">
+                    
+                        <div class="column is-one-quarter">
+                            <a href="https://hilanco.github.io/models/hilbert.html">
+                            <div class="box">
+                                <article class="media">
+                                  <div class="media-content">
+                                    <div class="content">
+                                      <p>
+                                        <strong>HILBERT</strong>
+                                        <br />
+                                        HILBERT is the BERT-Large model for Hungarian Trained on the 4 BN NYTI-BERT corpus. One of the pioneers of the revolutionary transformer models, BERT has caused a sweeping success in the field of neural NLP.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </article>
+                            </div>
+                            </a>    
+                        </div> 
+                    
+                  
+                    <div class="column is-one-quarter">
+                        <a href="https://hilanco.github.io/models/electra.html">
+                        <div class="box">
+                            <article class="media">
+                              <div class="media-content">
+                                <div class="content">
+                                  <p>
+                                    <strong>HIL-ELECTRA</strong>
+                                    <br />
+									&raquo; HIL-ELECTRA NYTI <br />- trained on NYTI-BERT corpus
+									
+									<br />
+								    &raquo; HIL-ELECTRA wiki <br />- trained on Hungarian Wikipedia
+                                  </p>
+                                </div>
+                              </div>
+                            </article>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="column is-one-quarter">
+                    <a href="https://hilanco.github.io/models/roberta.html">
+                        <div class="box">
+                            <article class="media">
+                              <div class="media-content">
+                                <div class="content">
+                                  <p>
+                                    <strong>HIL-RoBERTa</strong>
+                                    <br />
+									&raquo; HIL-RoBERTa wiki<br />- trained on Hungarian Wikipedia	
+                                  </p>
+                                </div>
+                              </div>
+                            </article>
+                        </div>
+                    </a>
+                    </div>
+					<div class="column is-one-quarter">
+                        <a href="https://hilanco.github.io/models/albert.html">
+                        <div class="box">
+                            <article class="media">
+                              <div class="media-content">
+                                <div class="content">
+                                  <p>
+                                    <strong>HIL-ALBERT</strong>
+                                    <br />
+									&raquo; HIL-ALBERT NYTI-BERT <br />- trained on 10% of NYTI-BERT corpus									
+									<br />
+								    &raquo; HIL-ALBERT wiki <br />- trained on Hungarian Wikipedia
+                                  </p>
+                                </div>
+                              </div>
+                            </article>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+			</section>
+    </body>
+</html>
