@@ -15,7 +15,7 @@
     <body>
         <section class="section has-background-info-light pt-0">
             <div class="container">
-              <div class="columns py-6">
+              <div class="columns py-6" style="padding-top: 5px !important; padding-bottom: 0px !important;">
                 <div class="column">
                   <figure class="is-flex is-justify-content-flex-start"> 
                     <img src="pictures/pecsi-tudomanyetem-brand.png">
@@ -46,7 +46,7 @@
             </div>
           </section>
 		  -->
-		  <section class="section pt-0" style="margin-top: 10px;">
+		  <section class="section pt-0" style="margin-top: 15px;">
             <div class="container">
                <div class="content is-flex is-justify-content-center">
                   <figure class="is-flex is-justify-content-center" style="width:800px"> 
