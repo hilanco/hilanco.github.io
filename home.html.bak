@@ -125,8 +125,8 @@
 				 </div>
 				 <div class="content is-flex is-justify-content-center">
 					<ul>
-						<li>Demo site: <a href="https://juniper.nytud.hu/demo/gpt3">https://juniper.nytud.hu/demo/gpt3</a></li>
-						<li>Download link: <a href="https://polka.nytud.hu/full" target="_blank">https://polka.nytud.hu/full</a></li>
+						<li>Demo site: <a href="https://juniper.nytud.hu/demo/gpt3">https://juniper.nytud.hu/demo/gptx</a></li>
+						<li>Download link: <a href="https://polka.nytud.hu/full" target="_blank">https://polka.nytud.hu/gptx</a></li>
 					</ul>
                 </div>
             </div>
@@ -381,7 +381,7 @@
                 </div>
             </div>
           </section>
-		  <section class="section has-background-info-light pt-0" style="margin-top: 10px;">
+		  <section class="section has-background-info-light pt-0" style="margin-top: 20px;">
             <div class="container">
               <div class="columns py-6" style="padding-top: 10px !important; padding-bottom: 0px !important;">
                 <div class="column">
